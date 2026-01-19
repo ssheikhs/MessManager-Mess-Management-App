@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E3F2FD"
+    android:padding="20dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/layoutTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp"
+        android:paddingHorizontal="4dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_header_rounded"
+            android:gravity="center"
+            android:text="Meal Entry"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.02"
+            android:elevation="2dp" />
+    </LinearLayout>
+
+    <!-- Card -->
+    <LinearLayout
+        android:id="@+id/layoutMeals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#F1F5F9"
+        android:padding="24dp"
+        android:elevation="4dp"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's Meals"
+            android:textColor="#2D3748"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.03"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E2E8F0"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Breakfast -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Breakfast"
+                android:textColor="#2D3748"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBreakfastAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50 ৳"
+                android:textColor="#4A5568"
+                android:textSize="14sp"
+                android:layout_marginEnd="12dp" />
+
+            <Button
+                android:id="@+id/btnBreakfastEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="ADD"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:backgroundTint="#2E7D32"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Lunch -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lunch"
+                android:textColor="#2D3748"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLunchAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150 ৳"
+                android:textColor="#4A5568"
+                android:textSize="14sp"
+                android:layout_marginEnd="12dp" />
+
+            <Button
+                android:id="@+id/btnLunchEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="ADD"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:backgroundTint="#2E7D32"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Dinner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/edittext_background"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dinner"
+                android:textColor="#2D3748"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDinnerAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150 ৳"
+                android:textColor="#4A5568"
+                android:textSize="14sp"
+                android:layout_marginEnd="12dp" />
+
+            <Button
+                android:id="@+id/btnDinnerEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="ADD"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:backgroundTint="#2E7D32"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- View Cart Button (pattern) -->
+        <Button
+            android:id="@+id/btnCart"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1565C0"
+            android:text="VIEW CART"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.03" />
+
+    </LinearLayout>
+
+</LinearLayout>

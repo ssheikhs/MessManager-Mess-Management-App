@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#E3F2FD"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/tvExpenseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#2D3748"
+        android:layout_marginBottom="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="12dp"
+        android:background="#CBD5E0" />
+
+    <TextView
+        android:id="@+id/tvExpenseAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount: 0৳"
+        android:textSize="14sp"
+        android:textColor="#2B6CB0"
+        android:layout_marginBottom="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="12dp"
+        android:background="#CBD5E0" />
+
+    <TextView
+        android:id="@+id/tvExpenseCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="13sp"
+        android:textColor="#4A5568"
+        android:layout_marginBottom="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="12dp"
+        android:background="#CBD5E0" />
+
+    <TextView
+        android:id="@+id/tvExpenseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2025-11-28"
+        android:textSize="12sp"
+        android:textColor="#A0AEC0" />
+
+</LinearLayout>

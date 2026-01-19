@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "257069688168",
+    "project_id": "messmanagement-8816e",
+    "storage_bucket": "messmanagement-8816e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257069688168:android:248e48bf423cd449b222dd",
+        "android_client_info": {
+          "package_name": "com.example.messmanagement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2qPlkvNr7nQfmpnFIBzO1YTutwRWXxsc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

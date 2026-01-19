@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- spacing -->
+    <item>
+        <shape>
+            <size android:height="10dp"/>
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+
+    <!-- line -->
+    <item android:bottom="9dp">
+        <shape>
+            <size android:height="1dp"/>
+            <solid android:color="#CBD5E0"/>
+        </shape>
+    </item>
+
+</layer-list>
